@@ -13,7 +13,7 @@ silence_warnings do
   end
 
   class Mongo::Pool
-    TCPSocket = ::EventMachine::Synchrony::TCPSocket
+#    TCPSocket = ::EventMachine::Synchrony::TCPSocket
     Mutex = ::EventMachine::Synchrony::Thread::Mutex
     ConditionVariable = ::EventMachine::Synchrony::Thread::ConditionVariable
   end
